@@ -9,6 +9,10 @@ module.exports = {
       },
       scale: {
         '102': '1.02'
+      },
+      transitionDuration: {
+        '0': '0ms',
+        '2000': '2000ms',
       }
     },
   },
