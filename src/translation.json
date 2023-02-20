@@ -1,0 +1,22 @@
+{
+    "english" : {
+        "navigation": ["Home", "Experience", "Project", "Skills"],
+        "language": ["English", "Indonesia"],
+        "home-button": ["My Resume", "Contact Me"],
+        "skills": "Skills & Tools",
+        "education": "Education",
+        "certification": "Certification",
+        "project": "Featured Project",
+        "view-more": "View More"
+    },
+    "indonesia" : {
+        "navigation": ["Beranda", "Pengalaman", "Proyek", "Kemampuan"],
+        "language": ["Indonesia", "English"],
+        "home-button": ["Resume Saya", "Kontak Saya"],
+        "skills": "Kemampuan & Alat",
+        "education": "Edukasi",
+        "certification": "Sertifikasi",
+        "project": "Proyek",
+        "view-more": "Lihat Lebih"
+    }
+}

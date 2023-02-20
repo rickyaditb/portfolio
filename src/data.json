@@ -1,0 +1,98 @@
+{
+    "name": "Ricky Aditya Bagaskara",
+    "title": "Full Stack Developer",
+    "description": "A passionate developer with experience of building Web applications with JavaScript/Typescript, React, Next and some other libraries and frameworks while occasionally doing UI/UX design.",
+    "links": {
+        "twitter": "https://twitter.com/rickyaditb",
+        "github": "https://github.com/rickyaditb/",
+        "linkedin": "https://www.linkedin.com/in/rickyaditb/",
+        "behance": "https://www.behance.net/rickyaditb",
+        "email": "mailto:rickyaditb@gmail.com"
+    },
+    "resume": "#",
+    "contact": "mailto:rickyaditb@gmail.com",
+    "skills": {
+        "language": [
+            "Typescript",
+            "Javascript",
+            "PHP"
+        ],
+        "framework": [
+            "React",
+            "Next",
+            "Laravel"
+        ],
+        "database": [
+            "Firebase",
+            "Express",
+            "SQL"
+        ],
+        "devops": [
+            "Docker",
+            "Kubernetes"
+        ]
+    },
+    "education": {
+        "title": "Bachelor of Computer Science",
+        "university": "Pakuan University",
+        "description": "Thesis Topic: Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nemo blanditiis vel nostrum. Tenetur vel recusandae ipsam sed, dolorum pariatur!",
+        "period": "2019 - 2023",
+        "gpa": 3.85
+    },
+    "certification": [
+        {
+            "title": "HTML5 Application Development Fundamentals",
+            "publisher": "Microsoft"
+        },
+        {
+            "title": "DevOps Fundamentals",
+            "publisher": "Dicoding"
+        }
+    ],
+    "projects": [
+        {
+            "name": "News Aggregator",
+            "thumbnail": "./assets",
+            "description": "News Website that provide its user with custom-tailored news articles and content, based on their specific interests and preferences. Users can choose to follow topics, such as politics, sports, entertainment, or technology, and receive news and articles that are relevant to their selected interests.",
+            "stacks": [
+                {
+                    "name": "React",
+                    "iconColor": "#3b82f6",
+                    "textColor": "white"
+                },
+                {
+                    "name": "MySQL",
+                    "iconColor": "#f97316",
+                    "textColor": "white"
+                },
+                {
+                    "name": "GraphQL",
+                    "iconColor": "#a855f7",
+                    "textColor": "white"
+                }
+            ]
+        },
+        {
+            "name": "Presence System",
+            "thumbnail": "./assets",
+            "description": "Location-Based Presence System, built with MERN stack to Lorem ipsum dolor sit amet",
+            "stacks": [
+                {
+                    "name": "Next.js",
+                    "iconColor": "#ffffff",
+                    "textColor": "black"
+                },
+                {
+                    "name": "MongoDB",
+                    "iconColor": "#22c55e",
+                    "textColor": "white"
+                },
+                {
+                    "name": "Redux",
+                    "iconColor": "#7e22ce",
+                    "textColor": "white"
+                }
+            ]
+        }
+    ]
+}
