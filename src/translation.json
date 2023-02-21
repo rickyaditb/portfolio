@@ -1,6 +1,6 @@
 {
     "english" : {
-        "navigation": ["Home", "Experience", "Project", "Skills"],
+        "navigation": ["Home", "Education", "Certification", "Project"],
         "language": ["English", "Indonesia"],
         "home-button": ["My Resume", "Contact Me"],
         "skills": "Skills & Tools",
@@ -10,7 +10,7 @@
         "view-more": "View More"
     },
     "indonesia" : {
-        "navigation": ["Beranda", "Pengalaman", "Proyek", "Kemampuan"],
+        "navigation": ["Beranda", "Edukasi", "Sertifikasi", "Proyek"],
         "language": ["Indonesia", "English"],
         "home-button": ["Resume Saya", "Kontak Saya"],
         "skills": "Kemampuan & Alat",

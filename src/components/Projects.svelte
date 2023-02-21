@@ -24,7 +24,7 @@
     $: darkIconColor = dark ? "black" : "white";
 </script>
 
-<section>
+<section id="project">
     <div
         use:inview={Configuration["animation"].options}
         on:enter={() => {

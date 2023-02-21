@@ -34,12 +34,12 @@
 >
 {#key isInView}
     {#key lang}
-        <li class="flex gap-10" in:fly={Configuration['animation']['in-fly']}>
-            <ul>{Translation[lang].navigation[0]}</ul>
-            <ul>{Translation[lang].navigation[1]}</ul>
-            <ul>{Translation[lang].navigation[2]}</ul>
-            <ul>{Translation[lang].navigation[3]}</ul>
-        </li>
+        <div class="flex gap-10" in:fly={Configuration['animation']['in-fly']}>
+            <a href="#home">{Translation[lang].navigation[0]}</a>
+            <a href="#education">{Translation[lang].navigation[1]}</a>
+            <a href="#certifications">{Translation[lang].navigation[2]}</a>
+            <a href="#project">{Translation[lang].navigation[3]}</a>
+        </div>
     {/key}
     <div class="flex gap-3" in:fly={Configuration['animation']['in-fly']}>
         <button 

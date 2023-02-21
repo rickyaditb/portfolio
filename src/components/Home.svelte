@@ -20,6 +20,7 @@
     class={`${
         isInView ? "opacity-100" : "opacity-0"
     } md:grid grid-cols-3 justify-items-end`}
+    id="home"
 >
     {#key isInView}
         <div

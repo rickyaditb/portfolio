@@ -14,6 +14,7 @@
     use:inview={Configuration['animation'].options}
     on:enter={() => {isInView = true}}
     class={isInView ? "opacity-100" : "opacity-0"}
+    id="education"
 >
 {#key isInView}
     {#key lang}

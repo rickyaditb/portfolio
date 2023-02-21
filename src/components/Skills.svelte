@@ -16,6 +16,7 @@
         isInView = true;
     }}
     class={isInView ? "opacity-100" : "opacity-0"}
+    id="skills"
 >
     {#key isInView}
         {#key lang}
