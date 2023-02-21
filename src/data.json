@@ -79,7 +79,7 @@
             "stacks": [
                 {
                     "name": "Next.js",
-                    "iconColor": "#ffffff",
+                    "iconColor": "white",
                     "textColor": "black"
                 },
                 {

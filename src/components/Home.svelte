@@ -7,6 +7,8 @@
     import Translation from "../translation.json";
 
     export let lang;
+    export let dark;
+    
     let isInView;
 </script>
 
@@ -27,7 +29,7 @@
             <div class="w-48 h-48 rounded-full">
                 <img
                     src="./assets/img/profile.png"
-                    class="rounded-full"
+                    class="rounded-full border-2 border-gray-600"
                     alt="Profile Foto"
                 />
             </div>
@@ -53,7 +55,7 @@
                 >
                     <a
                         href={Data.resume}
-                        class="inline border-4 border-secondary bg-secondary font-bold text-xl md:text-2xl px-3 py-2 rounded"
+                        class="inline border-4 border-secondary bg-secondary font-bold text-xl md:text-2xl px-3 py-2 rounded text-white"
                         >{Translation[lang]["home-button"][0]}</a
                     >
                     <a
@@ -71,7 +73,7 @@
             <div class="w-48 h-48 rounded-full">
                 <img
                     src="./assets/img/profile.png"
-                    class="rounded-full"
+                    class="rounded-full border-2 border-gray-600"
                     alt="Profile Foto"
                 />
             </div>
@@ -89,7 +91,7 @@
                 </a>
                 <a
                     href={Data.links.github}
-                    class="bg-gray-500 w-10 h-10 rounded flex items-center justify-center p-2"
+                    class={`${dark ? 'bg-gray-500' : 'bg-gray-600'} w-10 h-10 rounded flex items-center justify-center p-2 transition ease-out duration-1000`}
                 >
                     <img
                         height="32"
@@ -100,24 +102,24 @@
                 </a>
                 <a
                     href={Data.links.linkedin}
-                    class="bg-blue-700 w-10 h-10 rounded flex items-center justify-center p-2 font-bold text-2xl"
+                    class="bg-blue-700 text-white w-10 h-10 rounded flex items-center justify-center p-2 font-bold text-2xl"
                 >
                     in
                 </a>
                 <a
                     href={Data.links.behance}
-                    class="bg-white w-10 h-10 rounded flex items-center justify-center p-2"
+                    class={`${dark ? 'bg-white' : 'bg-black'} w-10 h-10 rounded flex items-center justify-center p-2 transition ease-out duration-1000`}
                 >
                     <img
                         height="32"
                         width="32"
-                        src="https://cdn.simpleicons.org/behance/black"
+                        src={`https://cdn.simpleicons.org/behance/${dark ? 'black' : 'white'}`}
                         alt="Github Icon"
                     />
                 </a>
                 <a
                     href={Data.links.email}
-                    class="bg-red-600 w-10 h-10 rounded flex items-center justify-center p-2"
+                    class="bg-red-600 w-10 h-10 rounded flex items-center justify-center p-2 text-white"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

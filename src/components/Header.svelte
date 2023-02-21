@@ -7,6 +7,7 @@
     import Configuration from "../configuration.json";
 
     export let lang;
+    export let dark;
     let isInView;
 
     const dispatch = createEventDispatcher();
@@ -15,6 +16,14 @@
     function switchLang(value) {
         dispatch("language", value);
         visible = !visible;
+    }
+    function switchTheme(value) {
+        dispatch("theme", value);
+        let borderColor = dark ? "#4b5563" : "white"
+        const nodeList = document.querySelectorAll(".border-white");
+        for (let i = 0; i < nodeList.length; i++) {
+            nodeList[i]['style'].borderColor = borderColor;
+        }
     }
 </script>
 
@@ -33,12 +42,14 @@
         </li>
     {/key}
     <div class="flex gap-3" in:fly={Configuration['animation']['in-fly']}>
-        <button class="bg-white p-3 rounded">
+        <button 
+        on:click={switchTheme}
+        class="border-2 border-white transition duration-1000 ease-out p-3 rounded box-border h-12 flex justify-center items-center">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                class="w-6 h-6 text-main"
+                class={`w-6 h-6 ${dark ? "text-white" : "text-main"} transition duration-1000 ease-out`}
             >
                 <path
                     fill-rule="evenodd"
@@ -49,7 +60,7 @@
         </button>
         <div>
             <button
-                class="border-2 w-36 py-2 rounded flex gap-2 items-center justify-center"
+                class="border-2 border-white transition duration-1000 h-12 w-36 py-2 rounded flex gap-2 items-center justify-center"
                 on:click={() => (visible = !visible)}
             >
                 <span>{Translation[lang].language[0]}</span>
@@ -67,7 +78,7 @@
                 </svg>
             </button>
             <button
-                class={`absolute border-2 w-36 py-2 text-center -mt-0.5 rounded transition duration-500 ${
+                class={`absolute border-2 border-white transition duration-1000 h-12 w-36 py-2 text-center -mt-0.5 rounded ${
                     visible ? "opacity-100" : "opacity-0 invisible"
                 }`}
                 on:click={() => switchLang(Translation[lang].language[1])}

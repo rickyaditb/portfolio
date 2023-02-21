@@ -7,12 +7,21 @@
     import Translation from "../translation.json";
 
     export let lang;
+    export let dark;
+
     let isInView;
     let isInViewStack = [];
     let isEven = (e, i) => {
         let result = i % 2;
         return result === 0 ? true : false;
     };
+
+    let darkBgColor;
+    $: darkBgColor = dark ? "white" : "black";
+    let darkTextColor;
+    $: darkTextColor = dark ? "text-black" : "text-white";
+    let darkIconColor;
+    $: darkIconColor = dark ? "black" : "white";
 </script>
 
 <section>
@@ -39,12 +48,14 @@
             on:enter={() => {
                 isInViewStack[index] = true;
             }}
-            class={`${isInViewStack[index] ? "opacity-100" : "-translate-y-6 opacity-0"} transition duration-2000 `}
+            class={`${
+                isInViewStack[index]
+                    ? "opacity-100"
+                    : "-translate-y-6 opacity-0"
+            } transition duration-2000 `}
         >
             {#key isInViewStack[index]}
-                <article
-                    class={`grid lg:grid-cols-2 mt-4 gap-10 items-center`}
-                >
+                <article class={`grid lg:grid-cols-2 mt-4 gap-10 items-center`}>
                     {#if isEven(Data.projects, index)}
                         <div
                             class="bg-white rounded h-64 hidden lg:block text-black"
@@ -63,17 +74,27 @@
                         <div class="flex gap-3">
                             {#each Data.projects[index].stacks as stack}
                                 <button
-                                    style={`background-color: ${stack.iconColor};`}
+                                    style={`background-color: ${
+                                        stack.iconColor === "white"
+                                            ? darkBgColor
+                                            : stack.iconColor
+                                    };`}
                                     class={`${
                                         stack.textColor === "white"
                                             ? "text-white"
-                                            : "text-black"
+                                            : darkTextColor
                                     } font-bold rounded px-3 py-2 mt-3 flex gap-2 items-center`}
                                 >
                                     <img
                                         height="20"
                                         width="20"
-                                        src={`https://cdn.simpleicons.org/${stack.name}/${stack.textColor}`}
+                                        src={`https://cdn.simpleicons.org/${
+                                            stack.name
+                                        }/${
+                                            stack.textColor === "black"
+                                                ? darkIconColor
+                                                : stack.textColor
+                                        }`}
                                         alt=""
                                     />
                                     <span>{stack.name}</span>
