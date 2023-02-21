@@ -60,7 +60,7 @@
         </button>
         <div>
             <button
-                class="border-2 border-white transition duration-1000 h-12 w-36 py-2 rounded flex gap-2 items-center justify-center"
+                class="border-2 border-white transition duration-1000 ease-out h-12 w-36 py-2 rounded flex gap-2 items-center justify-center"
                 on:click={() => (visible = !visible)}
             >
                 <span>{Translation[lang].language[0]}</span>
@@ -78,7 +78,7 @@
                 </svg>
             </button>
             <button
-                class={`absolute border-2 border-white transition duration-1000 h-12 w-36 py-2 text-center -mt-0.5 rounded ${
+                class={`absolute border-2 border-white transition duration-1000 ease-out h-12 w-36 py-2 text-center -mt-0.5 rounded ${
                     visible ? "opacity-100" : "opacity-0 invisible"
                 }`}
                 on:click={() => switchLang(Translation[lang].language[1])}
