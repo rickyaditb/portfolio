@@ -65,7 +65,7 @@
                             >
                                 <a
                                     href="http://rickyaditb.my.id"
-                                    class="w-52 bg-secondary px-3 py-2 font-bold text-white rounded text-2xl flex items-center justify-center gap-3"
+                                    class="w-52 border-white border-2 px-3 py-2 font-bold text-white rounded text-2xl flex items-center justify-center gap-3"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +85,7 @@
                                 </a>
                                 <a
                                     href="http://www.github.com"
-                                    class="w-52 bg-secondary px-3 py-2 font-bold text-white rounded text-2xl flex items-center justify-center gap-3"
+                                    class="w-52 border-white border-2 px-3 py-2 font-bold text-white rounded text-2xl flex items-center justify-center gap-3"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -109,8 +109,51 @@
                             {project.name}
                         </p>
                         <div
-                            class="my-4 bg-white rounded h-64 block lg:hidden"
-                        />
+                            class="my-4 bg-red-500 rounded h-64 block lg:hidden group"
+                        >
+                            <div
+                                class="bg-black/50 group-hover:opacity-100 h-full opacity-0 transition duration-500 ease-out flex flex-col items-center justify-center gap-3 rounded"
+                            >
+                                <a
+                                    href="http://rickyaditb.my.id"
+                                    class="w-52 border-white border-2 px-3 py-2 font-bold text-white rounded text-2xl flex items-center justify-center gap-3"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="w-6 h-6"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                                        />
+                                    </svg>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a
+                                    href="http://www.github.com"
+                                    class="w-52 border-white border-2 px-3 py-2 font-bold text-white rounded text-2xl flex items-center justify-center gap-3"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="w-6 h-6"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M14.447 3.027a.75.75 0 01.527.92l-4.5 16.5a.75.75 0 01-1.448-.394l4.5-16.5a.75.75 0 01.921-.526zM16.72 6.22a.75.75 0 011.06 0l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 11-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 010-1.06zm-9.44 0a.75.75 0 010 1.06L2.56 12l4.72 4.72a.75.75 0 11-1.06 1.06L.97 12.53a.75.75 0 010-1.06l5.25-5.25a.75.75 0 011.06 0z"
+                                            clip-rule="evenodd"
+                                        />
+                                    </svg>
+                                    <span>Source Code</span>
+                                </a>
+                            </div>
+                        </div>
                         <p class="mt-2 text-justify">{project.description}</p>
                         <div class="flex gap-3">
                             {#each Data.projects[index].stacks as stack}
@@ -152,7 +195,7 @@
                             >
                                 <a
                                     href="http://rickyaditb.my.id"
-                                    class="w-52 bg-secondary px-3 py-2 font-bold text-white rounded text-2xl flex items-center justify-center gap-3"
+                                    class="w-52 border-white border-2 px-3 py-2 font-bold text-white rounded text-2xl flex items-center justify-center gap-3"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -172,7 +215,7 @@
                                 </a>
                                 <a
                                     href="http://www.github.com"
-                                    class="w-52 bg-secondary px-3 py-2 font-bold text-white rounded text-2xl flex items-center justify-center gap-3"
+                                    class="w-52 border-white border-2 px-3 py-2 font-bold text-white rounded text-2xl flex items-center justify-center gap-3"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
