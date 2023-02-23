@@ -4,6 +4,7 @@
     import Home from "./components/Home.svelte";
     import Skills from "./components/Skills.svelte";
     import Education from "./components/Education.svelte";
+    import Experience from "./components/Experience.svelte";
     import Certifications from "./components/Certifications.svelte";
     import Projects from "./components/Projects.svelte";
     import Footer from "./components/Footer.svelte";
@@ -30,6 +31,7 @@
         <Home {lang} {dark} />
         <Skills {lang} />
         <Education {lang} />
+        <Experience {lang} />
         <Certifications {lang} />
         <Projects {lang} {dark} />
     </main>
