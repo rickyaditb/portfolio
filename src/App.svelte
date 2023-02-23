@@ -31,7 +31,7 @@
         <Home {lang} {dark} />
         <Skills {lang} />
         <Education {lang} />
-        <Experience {lang} />
+        <Experience {lang} {dark} />
         <Certifications {lang} />
         <Projects {lang} {dark} />
     </main>

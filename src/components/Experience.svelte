@@ -7,6 +7,7 @@
     import Translation from "../translation.json";
 
     export let lang;
+    export let dark;
     let isInView;
 </script>
 
@@ -22,12 +23,12 @@
     {#key lang}
     <h1 in:fly={Configuration['animation']['in-fly']} class="font-bold text-4xl">{Translation[lang].experience}</h1>
     {/key}
-    <div in:fly={Configuration['animation']['in-fly']} class="flex gap-5 p-3s mt-5 items-center">
+    <div in:fly={Configuration['animation']['in-fly']} class="flex gap-5 p-3 mt-2 items-center">
         <div class="z-40">
             <div
-                class="h-5 w-5 bg-secondary border-4 border-white flex justify-center items-center rounded-full relative"
+                class={`${dark ? "border-white" : "border-gray-800"} h-5 w-5 bg-secondary border-4 flex justify-center items-center rounded-full relative`}
             >
-                <div class="h-24 w-1 bg-white -z-10 relative" />
+                <div class={`${dark ? "bg-white" : "bg-gray-800"} h-24 w-1 -z-10 relative`} />
             </div>
         </div>
         <img
