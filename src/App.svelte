@@ -32,7 +32,7 @@
         <Skills {lang} />
         <Education {lang} />
         <Experience {lang} {dark} />
-        <Certifications {lang} />
+        <Certifications {lang} {dark} />
         <Projects {lang} {dark} />
     </main>
     <Footer />
