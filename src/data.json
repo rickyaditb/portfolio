@@ -42,11 +42,15 @@
     "certification": [
         {
             "title": "HTML5 Application Development Fundamentals",
-            "publisher": "Microsoft"
+            "publisher": "Microsoft",
+            "credential": "FQbD - XLcG",
+            "verification": "https://portal.certiport.com/Portal/Pages/CredentialVerification.aspx"
         },
         {
             "title": "DevOps Fundamentals",
-            "publisher": "Dicoding"
+            "publisher": "Dicoding",
+            "credential": "ASdB - CwSA",
+            "verification": "https://dicoding.com"
         }
     ],
     "projects": [
