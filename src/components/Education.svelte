@@ -36,7 +36,7 @@
             alt="University Icon"
         />
         <div class="text-center lg:text-left">
-            <p class="text-2xl font-bold">{Data.education.title}</p>
+            <p class="text-2xl font-bold">{lang === "english" ? Data.education.titleEn : Data.education.titleId}</p>
             <div
                 class="flex flex-wrap justify-center lg:justify-start gap-x-3 mt-1"
             >
@@ -91,7 +91,7 @@
                     <p class="text-xl">GPA {Data.education.gpa}</p>
                 </div>
             </div>
-            <p class="mt-1">{Data.education.description}</p>
+            <p class="mt-1">{lang === "english" ? Data.education.descriptionEn : Data.education.descriptionId}</p>
         </div>
     </div>
     {/key}

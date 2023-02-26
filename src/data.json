@@ -33,9 +33,11 @@
         ]
     },
     "education": {
-        "title": "Bachelor of Computer Science",
+        "titleEn": "Bachelor of Computer Science",
+        "titleId": "Sarjana Ilmu Komputer",
         "university": "Pakuan University",
-        "description": "Thesis Topic: Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nemo blanditiis vel nostrum. Tenetur vel recusandae ipsam sed, dolorum pariatur!",
+        "descriptionEn": "Thesis Topic: Analysis of Public Sentiment Towards ChatGPT Using Lexicon Based Method",
+        "descriptionId": "Thesis Topic: Analsis Sentimen Masyarakat Terhadap ChatGPT Menggunakan Metode Lexicon Based",
         "period": "2019 - 2023",
         "gpa": 3.85
     },
