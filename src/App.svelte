@@ -22,11 +22,19 @@
         document.body.style.backgroundColor = bgColor;
         document.body.style.color = textColor;
     };
+
+    const anchorHandler = (event) => {
+        const anchor = document.getElementById(event.detail);
+        window.scrollTo({
+			top: anchor.offsetTop-30,
+			behavior: 'smooth'
+		})
+    }
 </script>
 
 
     <Head />
-    <Header {lang} {dark} on:language={langSwitcher} on:theme={themeSwitcher}/>
+    <Header {lang} {dark} on:language={langSwitcher} on:anchor={anchorHandler} on:theme={themeSwitcher}/>
     <main class="container mx-auto px-5 xl:px-44 flex flex-col gap-16 my-8">
         <Home {lang} {dark} />
         <Skills {lang} />

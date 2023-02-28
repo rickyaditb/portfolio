@@ -24,6 +24,9 @@
     let switchMenu = () => {
         menuVisible = !menuVisible;
     };
+    let anchorHandler = (value) => {
+        dispatch("anchor", value);
+    }
 </script>
 
 <header
@@ -41,10 +44,10 @@
                 class="flex gap-10"
                 in:fly={Configuration["animation"]["in-fly"]}
             >
-                <a href="#home">{Translation[lang].navigation[0]}</a>
-                <a href="#education">{Translation[lang].navigation[1]}</a>
-                <a href="#certifications">{Translation[lang].navigation[2]}</a>
-                <a href="#project">{Translation[lang].navigation[3]}</a>
+                <button on:click={() => anchorHandler("home")}>{Translation[lang].navigation[0]}</button>
+                <button on:click={() => anchorHandler("education")}>{Translation[lang].navigation[1]}</button>
+                <button on:click={() => anchorHandler("certifications")}>{Translation[lang].navigation[2]}</button>
+                <button on:click={() => anchorHandler("project")}>{Translation[lang].navigation[3]}</button>
             </div>
         {/key}
         <div class="flex gap-3" in:fly={Configuration["animation"]["in-fly"]}>
