@@ -8,7 +8,8 @@
         "experience": "Experience",
         "certification": "Certification",
         "project": "Featured Project",
-        "view-more": "View More"
+        "view-more": "View More",
+        "view-less": "View Less"
     },
     "indonesia" : {
         "navigation": ["Beranda", "Edukasi", "Sertifikasi", "Proyek"],
@@ -19,6 +20,7 @@
         "experience": "Pengalaman",
         "certification": "Sertifikasi",
         "project": "Proyek",
-        "view-more": "Lihat Lebih"
+        "view-more": "Lihat Lebih Banyak",
+        "view-less": "Lihat Lebih Sedikit"
     }
 }

@@ -8,5 +8,8 @@
             "y": -20,
             "duration": 2000
         }
+    },
+    "certifications": {
+        "startItems": 1
     }
 }
